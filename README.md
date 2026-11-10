@@ -1,16 +1,17 @@
 # circular linked list #
 
-'''cpp
-
+//include libraries
 #include <iostream>
 using namespace std;
+//define the List Node
 struct Node {
     int data;
     Node* next;
 };
-'''
+// define the head
 Node* head = nullptr;
 
+//def to create first node
 void createfirstNode(int data) {
     Node *newnode = new Node();
     newnode->data = data;
