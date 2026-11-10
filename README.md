@@ -8,7 +8,7 @@ struct Node {
     int data;
     Node* next;
 };
-
+'''
 Node* head = nullptr;
 
 void createfirstNode(int data) {
