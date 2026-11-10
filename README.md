@@ -81,6 +81,7 @@ void display() {
 }
 
 void deletefirstNode() {
+
     if (head==nullptr) {
         cout<<"List is empty"<<endl;
         return;
@@ -105,6 +106,7 @@ void deletefirstNode() {
 }
 
 void deleteLastNode() {
+
     if (head==nullptr) {
         cout<<"List is empty"<<endl;
         return;
@@ -128,6 +130,7 @@ void deleteLastNode() {
 }
 
 void deleteByValue(int data) {
+
     if (head == nullptr) {
         cout<<"List is empty"<<endl;
         return;
