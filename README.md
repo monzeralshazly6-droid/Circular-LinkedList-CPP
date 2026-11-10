@@ -64,10 +64,12 @@ void insert(int data, char letter)
 }
 
 void display() {
+
     if (head==nullptr) {
         cout<<"List is empty"<<endl;
         return;
     }
+    
     Node *temp = head;
 
 
