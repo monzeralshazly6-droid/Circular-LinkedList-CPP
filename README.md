@@ -1,4 +1,4 @@
-# //circular linked list #
+# circular linked list #
 
 '''cpp
 
