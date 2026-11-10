@@ -209,14 +209,17 @@ void deleteByValue(int data) {
 }
 
 void search(int data) {
+
     if (head==nullptr) {
         cout<<"List is empty"<<endl;
         return;
     }
+    
     Node *temp = head;
     int pos = 0;
     bool found = true;
     Node *after = head;
+    
     while (temp->data != data) {
         after = temp->next;
         if (after == head) {
@@ -224,10 +227,12 @@ void search(int data) {
             cout << "Not found !!"<<endl;
             return;
         }
+        
         temp = temp->next;
         pos++;
 
     }
+    
     if (found == true) {
         cout<< "your number " <<temp->data <<" Found at postion " << pos <<endl;
         return;
@@ -237,10 +242,12 @@ void search(int data) {
 
 
 int main() {
+
     insert(10,'e');
     insert(20,'e');
     insert(30, 'e'); 
     display();cout <<endl;
     deleteByValue(10);
     display();cout <<endl<<endl;
+    
 }
