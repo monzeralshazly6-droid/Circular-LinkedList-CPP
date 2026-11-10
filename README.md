@@ -1,14 +1,19 @@
-//circular linked list
+# circular linked list #
+
 #include <iostream>
 using namespace std;
+
 struct Node {
+
     int data;
     Node* next;
+    
 };
 
 Node* head = nullptr;
 
 void createfirstNode(int data) {
+
     Node *newnode = new Node();
     newnode->data = data;
     newnode->next = newnode;
@@ -17,6 +22,7 @@ void createfirstNode(int data) {
 }
 
 //e = add it in the end and b = add it in the biginig
+
 void insert(int data, char letter)
 {
 
