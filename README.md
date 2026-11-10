@@ -126,6 +126,7 @@ void deleteByValue(int data) {
     }
 
 // if list was just from 1 node
+
     if(head->next == head)
     {
         if (head->data == data) {
@@ -137,6 +138,7 @@ void deleteByValue(int data) {
     }
 
 // if the list was from 2 nodes
+
     else if (head->next->next == head)
     {   
         if (head->data == data)
